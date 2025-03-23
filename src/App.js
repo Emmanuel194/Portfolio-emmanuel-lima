@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "./pages/Home";
+import Experience from "./pages/Experience";
+import Technologies from "./pages/Technologies";
+import Projects from "./pages/Projects";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <main style={{ paddingTop: "80px" }}>
+        <section id="home" style={{ padding: "2rem" }}>
+          <Home />
+        </section>
+        <section id="experience" style={{ padding: "2rem" }}>
+          <Experience />
+        </section>
+        <section id="technologies" style={{ padding: "2rem" }}>
+          <Technologies />
+        </section>
+        <section id="projects" style={{ padding: "2rem" }}>
+          <Projects />
+        </section>
+      </main>
+      <Footer />
     </div>
   );
 }
