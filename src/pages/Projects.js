@@ -24,7 +24,15 @@ function Projects() {
 
   return (
     <div style={{ padding: "2rem" }}>
-      <h2 style={{ textAlign: "center" }}>PROJETOS</h2>
+      <h2
+        style={{
+          color: "rgba(77, 184, 255, 1)",
+          fontWeight: "bold",
+          textAlign: "center",
+        }}
+      >
+        PROJETOS
+      </h2>
       <div
         style={{
           display: "flex",
@@ -34,16 +42,7 @@ function Projects() {
         }}
       >
         {projects.map((project, index) => (
-          <div
-            key={index}
-            style={{
-              border: "1px solid #ddd",
-              borderRadius: "8px",
-              padding: "1rem",
-              textAlign: "center",
-              maxWidth: "300px",
-            }}
-          >
+          <div key={index} className="project-card">
             <img
               src={project.image}
               alt={project.title}
@@ -53,10 +52,32 @@ function Projects() {
                 marginBottom: "0.5rem",
               }}
             />
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              Ver no GitHub
+            <h3 style={{ color: "rgba(242, 245, 248, 1)", fontWeight: "bold" }}>
+              {project.title}
+            </h3>
+            <p style={{ color: "rgba(242, 245, 248, 0.8)" }}>
+              {project.description}
+            </p>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                alt="GitHub"
+                style={{
+                  width: "30px",
+                  height: "30px",
+                  borderRadius: "50%",
+                  backgroundColor: "#fff",
+                  padding: "5px",
+                }}
+              />
             </a>
           </div>
         ))}
