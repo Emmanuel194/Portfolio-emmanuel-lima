@@ -5,8 +5,11 @@ import {
   faJsSquare,
   faPython,
   faGitAlt,
-  faLinkedin,
+  faReact,
+  faNodeJs,
+  faFigma,
 } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase, faCode } from "@fortawesome/free-solid-svg-icons";
 import perfil from "../assets/images/perfil.jpg";
 
 function Home() {
@@ -56,7 +59,7 @@ function Home() {
               marginBottom: "1rem",
             }}
           >
-            Desenvolvedor Front-End.
+            Desenvolvedor Full-Stack.
           </p>
 
           <div
@@ -69,16 +72,61 @@ function Home() {
               icon={faCss3Alt}
               size="2x"
               style={{ color: "#2965f1" }}
+              title="CSS3"
             />
             <FontAwesomeIcon
               icon={faJsSquare}
               size="2x"
               style={{ color: "#f7df1e" }}
+              title="JavaScript"
             />
             <FontAwesomeIcon
               icon={faPython}
               size="2x"
               style={{ color: "#3776ab" }}
+              title="Python"
+            />
+            <FontAwesomeIcon
+              icon={faReact}
+              size="2x"
+              style={{ color: "#61DBFB" }}
+              title="React"
+            />
+            <FontAwesomeIcon
+              icon={faDatabase}
+              size="2x"
+              style={{ color: "#00758f" }}
+              title="SQL"
+            />
+            <FontAwesomeIcon
+              icon={faNodeJs}
+              size="2x"
+              style={{ color: "#3C873A" }}
+              title="Node.js"
+            />
+            <FontAwesomeIcon
+              icon={faJsSquare}
+              size="2x"
+              style={{ color: "#3178C6" }}
+              title="TypeScript"
+            />
+            <FontAwesomeIcon
+              icon={faFigma}
+              size="2x"
+              style={{ color: "#F24E1E" }}
+              title="Figma"
+            />
+            <FontAwesomeIcon
+              icon={faGitAlt}
+              size="2x"
+              style={{ color: "#F1502F" }}
+              title="Git"
+            />
+            <FontAwesomeIcon
+              icon={faCode}
+              size="2x"
+              style={{ color: "#83CD29" }}
+              title="Express.js"
             />
           </div>
         </div>
@@ -104,38 +152,45 @@ function Home() {
 
         <div style={{ display: "flex", gap: "1.5rem" }}>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/emmanuellimaa/"
             target="_blank"
             rel="noopener noreferrer"
+            title="LinkedIn"
             style={{
-              color: "#fff",
               textDecoration: "none",
-              borderBottom: "1px solid #4DB8FF",
             }}
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="2x"
-              style={{ color: "#0077b5" }}
-            />{" "}
-            LinkedIn
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+              alt="LinkedIn"
+              style={{
+                width: "40px",
+                height: "40px",
+                borderRadius: "50%",
+                backgroundColor: "#0077B5",
+              }}
+            />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/Emmanuel194"
             target="_blank"
             rel="noopener noreferrer"
+            title="GitHub"
             style={{
-              color: "#fff",
               textDecoration: "none",
-              borderBottom: "1px solid #4DB8FF",
             }}
           >
-            <FontAwesomeIcon
-              icon={faGitAlt}
-              size="2x"
-              style={{ color: "#f34f29" }}
-            />{" "}
-            GitHub
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              alt="GitHub"
+              style={{
+                width: "30px",
+                height: "30px",
+                borderRadius: "50%",
+                backgroundColor: "#fff",
+                padding: "5px",
+              }}
+            />
           </a>
         </div>
       </div>

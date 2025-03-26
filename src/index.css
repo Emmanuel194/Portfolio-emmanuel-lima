@@ -6,6 +6,32 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.formation-card {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.formation-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(77, 184, 255, 1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.technology-card {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.technology-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(77, 184, 255, 1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+li::marker {
+  color: rgba(77, 184, 255, 1);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
