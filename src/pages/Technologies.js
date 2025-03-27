@@ -32,6 +32,8 @@ function Technologies() {
             <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>Git</li>
             <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>GitHub</li>
             <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>Figma</li>
+            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>Postman</li>
+            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>Docker</li>
           </ul>
         </div>
 
@@ -53,7 +55,11 @@ function Technologies() {
           </h3>
           <ul>
             <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>React</li>
-            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>Tailwind</li>
+            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>Tailwind CSS</li>
+            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>Express.js</li>
+            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>Laravel</li>
+            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>Adonis.js</li>
+            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>Bootstrap</li>
           </ul>
         </div>
 
@@ -75,9 +81,11 @@ function Technologies() {
           </h3>
           <ul>
             <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>JavaScript</li>
-            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>HTML/CSS</li>
+            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>TypeScript</li>
             <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>UI/UX Design</li>
             <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>Python</li>
+            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>SQL</li>
+            <li style={{ color: "rgba(242, 245, 248, 0.8)" }}>PHP</li>
           </ul>
         </div>
       </div>

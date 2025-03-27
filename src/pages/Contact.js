@@ -1,7 +1,7 @@
 import React from "react";
-import Email from "../assets/icons/email.png";
-import Chat from "../assets/icons/chat.png";
-import Phone from "../assets/icons/phone.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faRocketchat } from "@fortawesome/free-brands-svg-icons";
 
 function Contact() {
   return (
@@ -42,13 +42,13 @@ function Contact() {
             flex: "1",
           }}
         >
-          <img
-            src={Email}
-            alt="Email"
+          <FontAwesomeIcon
+            icon={faEnvelope}
             style={{
               width: "30px",
               height: "30px",
               marginRight: "1rem",
+              color: "rgba(77, 184, 255, 1)",
             }}
           />
           <div>
@@ -62,7 +62,7 @@ function Contact() {
               EMAIL:
             </p>
             <p style={{ color: "rgba(242, 245, 248, 0.8)" }}>
-              aliciakathleenp@gmail.com
+              emanuel_lima2011@hotmail.com
             </p>
           </div>
         </div>
@@ -74,13 +74,13 @@ function Contact() {
             flex: "1",
           }}
         >
-          <img
-            src={Phone}
-            alt="Phone"
+          <FontAwesomeIcon
+            icon={faPhone}
             style={{
               width: "30px",
               height: "30px",
               marginRight: "1rem",
+              color: "rgba(77, 184, 255, 1)",
             }}
           />
           <div>
@@ -93,7 +93,7 @@ function Contact() {
             >
               CONTATO:
             </p>
-            <p style={{ color: "rgba(242, 245, 248, 0.8)" }}>(31) 97305-1982</p>
+            <p style={{ color: "rgba(242, 245, 248, 0.8)" }}>(81) 97340-8668</p>
           </div>
         </div>
 
@@ -104,13 +104,13 @@ function Contact() {
             flex: "1",
           }}
         >
-          <img
-            src={Chat}
-            alt="Social"
+          <FontAwesomeIcon
+            icon={faRocketchat}
             style={{
               width: "30px",
               height: "30px",
               marginRight: "1rem",
+              color: "rgba(77, 184, 255, 1)",
             }}
           />
           <div>
@@ -123,32 +123,49 @@ function Contact() {
             >
               SOCIAL:
             </p>
-            <p>
+            <div style={{ display: "flex", gap: "1.5rem" }}>
               <a
-                href="https://linkedin.com/in/seu-perfil"
+                href="https://www.linkedin.com/in/emmanuellimaa/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="LinkedIn"
                 style={{
                   textDecoration: "none",
-                  color: "rgba(77, 184, 255, 1)",
-                  display: "block",
-                  marginBottom: "0.5rem",
                 }}
               >
-                LinkedIn
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                  alt="LinkedIn"
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    borderRadius: "50%",
+                    backgroundColor: "#0077B5",
+                  }}
+                />
               </a>
               <a
-                href="https://github.com/seu-usuario"
+                href="https://github.com/Emmanuel194"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="GitHub"
                 style={{
                   textDecoration: "none",
-                  color: "rgba(77, 184, 255, 1)",
                 }}
               >
-                GitHub
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="GitHub"
+                  style={{
+                    width: "30px",
+                    height: "30px",
+                    borderRadius: "50%",
+                    backgroundColor: "#fff",
+                    padding: "5px",
+                  }}
+                />
               </a>
-            </p>
+            </div>
           </div>
         </div>
       </div>

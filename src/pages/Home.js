@@ -9,7 +9,7 @@ import {
   faNodeJs,
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase, faCode } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import perfil from "../assets/images/perfil.jpg";
 
 function Home() {
@@ -20,7 +20,7 @@ function Home() {
         backgroundColor: "#333",
         color: "#fff",
         minHeight: "100vh",
-        padding: "2rem",
+        padding: "0.5rem",
       }}
     >
       <div
@@ -28,7 +28,7 @@ function Home() {
           display: "flex",
           alignItems: "center",
           gap: "2rem",
-          marginBottom: "2rem",
+          marginBottom: "4rem",
         }}
       >
         <img
@@ -122,32 +122,29 @@ function Home() {
               style={{ color: "#F1502F" }}
               title="Git"
             />
-            <FontAwesomeIcon
-              icon={faCode}
-              size="2x"
-              style={{ color: "#83CD29" }}
-              title="Express.js"
-            />
           </div>
         </div>
       </div>
 
       <div style={{ textAlign: "left", marginLeft: "2rem" }}>
-        <h2 style={{ marginBottom: "1rem" }}>SOBRE</h2>
+        <h2 style={{ marginBottom: "1rem", color: "#4DB8FF" }}>SOBRE</h2>
+        <h3 style={{ marginBottom: "1rem", color: "#aaa" }}>Quem eu sou?</h3>
         <p
           style={{
             maxWidth: "600px",
             marginBottom: "2rem",
             fontSize: "16px",
             lineHeight: "1.6",
+            color: "#aaa",
           }}
         >
-          Sou um desenvolvedor Front-End apaixonado por criar interfaces
-          modernas e funcionais, unindo criatividade e tecnologia para
-          proporcionar experiências digitais únicas. Com uma trajetória inicial
-          no design gráfico, utilizo meu olhar apurado para detalhes e
-          usabilidade para transformar ideias em projetos visuais impactantes.
-          Estou sempre buscando aprender e crescer com novos desafios.
+          Sou um Desenvolvedor Full Stack com 2 anos de experiência na criação
+          de sistemas escaláveis e aplicações web modernas. Minha especialidade
+          inclui trabalhar com tecnologias como Node.js, React e TypeScript.
+          Tenho vasta experiência em integrações de APIs, desenvolvimento de
+          processos de checkout e gateways de pagamento, além de construir
+          chatbots e soluções inovadoras. Estou sempre buscando aprender e
+          crescer com novos desafios.
         </p>
 
         <div style={{ display: "flex", gap: "1.5rem" }}>

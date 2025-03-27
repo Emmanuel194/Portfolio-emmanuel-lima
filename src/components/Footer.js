@@ -1,6 +1,8 @@
 import React from "react";
 
 function Footer() {
+  const linkHoverColor = "rgba(77, 184, 255, 1)";
+
   return (
     <footer
       style={{
@@ -19,7 +21,7 @@ function Footer() {
         }}
       >
         <div style={{ flex: 1 }}>
-          <h3 style={{ margin: "0.2rem 0", color: "#fff" }}>Emmanuel Lima</h3>{" "}
+          <h3 style={{ margin: "0.2rem 0", color: "#fff" }}>Emmanuel Lima</h3>
           <p
             style={{
               margin: "0.2rem 0",
@@ -27,11 +29,11 @@ function Footer() {
               fontWeight: "lighter",
             }}
           >
-            Desenvolvedor Front-End
+            Desenvolvedor Full-stack.
           </p>
           <p style={{ margin: "0.2rem 0", fontSize: "0.9rem" }}>
-            Criando experiências digitais únicas e memoráveis através do
-            desenvolvimento web moderno.
+            Desenvolvedor Full Stack Criando soluções web e sistemas escaláveis
+            com foco em performance e usabilidade.
           </p>
         </div>
 
@@ -50,7 +52,7 @@ function Footer() {
             }}
           >
             Links Rápidos
-          </h4>{" "}
+          </h4>
           <ul
             style={{
               listStyle: "none",
@@ -62,30 +64,41 @@ function Footer() {
             }}
           >
             <li>
-              <a href="/" style={{ color: "#fff", textDecoration: "none" }}>
+              <a
+                href="#home"
+                style={{ color: "#aaa", textDecoration: "none" }}
+                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
+                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
+              >
                 Home
               </a>
             </li>
             <li>
               <a
-                href="/about"
-                style={{ color: "#fff", textDecoration: "none" }}
+                href="#experience"
+                style={{ color: "#aaa", textDecoration: "none" }}
+                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
+                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
               >
-                Sobre
+                Experiências
               </a>
             </li>
             <li>
               <a
-                href="/portfolio"
-                style={{ color: "#fff", textDecoration: "none" }}
+                href="#projects"
+                style={{ color: "#aaa", textDecoration: "none" }}
+                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
+                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
               >
-                Portfolio
+                Projetos
               </a>
             </li>
             <li>
               <a
-                href="/contact"
-                style={{ color: "#fff", textDecoration: "none" }}
+                href="#contact"
+                style={{ color: "#aaa", textDecoration: "none" }}
+                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
+                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
               >
                 Contato
               </a>
@@ -100,7 +113,7 @@ function Footer() {
             margin: "0",
           }}
         >
-          <h4 style={{ color: "#fff", marginBottom: "0.5rem" }}>Social</h4>{" "}
+          <h4 style={{ color: "#fff", marginBottom: "0.5rem" }}>Social</h4>
           <ul
             style={{
               listStyle: "none",
@@ -113,12 +126,26 @@ function Footer() {
           >
             <li>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/emmanuellimaa/"
                 target="_blank"
-                style={{ color: "#fff", textDecoration: "none" }}
+                style={{ color: "#aaa", textDecoration: "none" }}
                 rel="noreferrer"
+                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
+                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
               >
                 LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Emmanuel194"
+                target="_blank"
+                style={{ color: "#aaa", textDecoration: "none" }}
+                rel="noreferrer"
+                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
+                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
+              >
+                GitHub
               </a>
             </li>
           </ul>
@@ -140,15 +167,19 @@ function Footer() {
 
         <div style={{ display: "flex", gap: "1rem" }}>
           <a
-            href="/privacy-policy"
+            href="/"
             style={{ color: "#aaa", textDecoration: "none" }}
+            onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
+            onMouseLeave={(e) => (e.target.style.color = "#aaa")}
           >
             Política de Privacidade
           </a>
           <span style={{ color: "#aaa" }}>•</span>
           <a
-            href="/terms-of-use"
+            href="/"
             style={{ color: "#aaa", textDecoration: "none" }}
+            onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
+            onMouseLeave={(e) => (e.target.style.color = "#aaa")}
           >
             Termos de Uso
           </a>

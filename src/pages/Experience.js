@@ -1,40 +1,71 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faNodeJs, faAws } from "@fortawesome/free-brands-svg-icons";
+import {
+  faReact,
+  faNodeJs,
+  faHtml5,
+  faCss3Alt,
+  faJsSquare,
+  faPython,
+  faLaravel,
+  faAngular,
+  faAws,
+  faDocker,
+  faWindows,
+} from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faCodeBranch, faCode } from "@fortawesome/free-solid-svg-icons";
 
 function Experience() {
   const [showMore, setShowMore] = useState(false);
 
   const experiences = [
     {
-      company: "Freelancer",
-      position: "Desenvolvedor Front-End",
+      company: "Cesar School",
+      position: "Tutor de Tecnologia",
       description:
-        "Desenvolvimento de sites modernos e responsivos, criando soluções personalizadas para diversos nichos. Aplicação de boas práticas de usabilidade e design.",
-      technologies: [faReact, faNodeJs, faDatabase],
-    },
-    {
-      company: "Compass UOL",
-      description:
-        "Estágio em Engenharia de Dados na Compass UOL, atuando com AWS e pipelines de dados.",
-      technologies: [faAws, faNodeJs],
+        "Instrução e orientação de alunos do ensino médio no desenvolvimento de habilidades em linguagens de programação, incluindo Python, JavaScript, HTML e CSS.  Aplicação de abordagens pedagógicas inovadoras, como peer instruction, para promover colaboração entre os alunos. Condução de projetos práticos de curta duração que consolidam o aprendizado por meio de aplicações reais.",
+      technologies: [faHtml5, faCss3Alt, faJsSquare, faPython],
     },
     {
       company: "Pagou.ai",
+      position: "Desenvolvedor Full-Stack",
       description:
-        "Desenvolvimento de integrações de APIs, interfaces dinâmicas e implementação de métodos de pagamento com QR Code.",
-      technologies: [faReact, faNodeJs, faDatabase],
+        "Desenvolvimento de integrações de APIs voltadas para o setor de jogos, assegurando alta funcionalidade e escalabilidade. Implementação de métodos de pagamento com QR Code para empresas parceiras utilizando Laravel. Criação e implementação de interfaces dinâmicas e intuitivas com React no front-end, enquanto no back-end, desenvolvimento e otimização de métodos em JavaScript para aprimorar a eficiência do sistema. Realização de testes detalhados na plataforma, aplicando boas práticas de controle de qualidade para garantir desempenho e confiabilidade.",
+      technologies: [
+        faReact,
+        faJsSquare,
+        faNodeJs,
+        faLaravel,
+        faDatabase,
+        faCodeBranch,
+      ],
     },
     {
       company: "VibeCem",
+      position: "Desenvolvedor Full-Stack",
       description:
-        "Refatoração de interfaces com Angular e integração do WhatsApp ao sistema. Implementação de soluções no back-end e configuração de containers Docker.",
-      technologies: [faReact, faDatabase, faNodeJs],
+        "Desenvolvimento e refatoração de interfaces utilizando Angular, com foco na melhoria da experiência do usuário. Integração do WhatsApp ao sistema web, otimizando os canais de comunicação e atendimento. Implementação de soluções no back-end com Node.js, atendendo a requisitos avançados de arquitetura e fluxo de dados. Execução de migrações no banco de dados PostgreSQL, utilizando seeders para enriquecimento de dados e automação de processos. Configuração e gerenciamento de containers Docker para aprimorar os processos de implantação e manutenção do sistema..",
+      technologies: [
+        faReact,
+        faNodeJs,
+        faDatabase,
+        faAngular,
+        faDocker,
+        faAws,
+        faCode,
+      ],
+    },
+    {
+      company: "Oculare Medical Center",
+      position: "Técnico De Informática",
+      description:
+        "Responsável por realizar manutenção preventiva e corretiva de equipamentos, abrangendo suporte técnico local e remoto. Desenvolvimento e automação de chatbots para WhatsApp utilizando a plataforma Blip-Take, integrando-os às operações da empresa para otimizar canais de atendimento. Atuação como líder técnico no setor de tecnologia durante o processo de acreditação pela ONA, contribuindo diretamente para a obtenção do selo de qualidade. Acúmulo de ampla experiência na implementação e gerenciamento de sistemas, consolidando soluções eficazes para as demandas operacionais.",
+      technologies: [faWindows, faDatabase, faNodeJs, faAws],
     },
   ];
 
-  const visibleExperiences = showMore ? experiences : experiences.slice(0, 3);
+  const visibleExperiences = showMore ? experiences : experiences.slice(0, 2);
 
   return (
     <div
@@ -84,9 +115,11 @@ function Experience() {
             <p style={{ color: "rgba(77, 184, 255, 1)", fontWeight: "bold" }}>
               Unifavip - Wyden
             </p>
-            <p>
-              Desenvolvendo habilidades em desenvolvimento de software,
-              arquitetura de sistemas e banco de dados.
+            <p style={{ color: "#aaa" }}>
+              Aprimorando habilidades no desenvolvimento de software,
+              arquitetura de sistemas e gerenciamento de bancos de dados. Foco
+              em projetar soluções eficientes, escaláveis e alinhadas às boas
+              práticas de engenharia.
             </p>
           </div>
 
@@ -118,9 +151,11 @@ function Experience() {
             <p style={{ color: "rgba(77, 184, 255, 1)", fontWeight: "bold" }}>
               Unifavip - Wyden
             </p>
-            <p>
-              Programa com foco em Java, Spring Boot, bancos de dados e boas
-              práticas de programação.
+            <p style={{ color: "#aaa" }}>
+              Formação com foco em desenvolvimento de software, utilizando
+              tecnologias como Java e Spring Boot para a criação de sistemas
+              robustos e escaláveis. Ênfase em modelagem e gerenciamento de
+              bancos de dados.
             </p>
           </div>
 
@@ -152,9 +187,11 @@ function Experience() {
             <p style={{ color: "rgba(77, 184, 255, 1)", fontWeight: "bold" }}>
               Softex Pernambuco
             </p>
-            <p>
-              Desenvolvimento de sistemas com foco em estrutura e experiência do
-              usuário.
+            <p style={{ color: "#aaa" }}>
+              Participação na trilha Back-End como parte do projeto de
+              Residência de Software realizado pelo convênio Softex/MCTI.
+              Durante o programa de 200 horas, foram abordados conceitos e
+              práticas de desenvolvimento web e mobile com foco em JavaScript.
             </p>
           </div>
         </div>

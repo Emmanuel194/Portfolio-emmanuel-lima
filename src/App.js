@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div style={{ position: "relative", overflow: "hidden" }}>
       <Header />
       <main style={{ paddingTop: "80px" }}>
         <section id="home" style={{ padding: "2rem" }}>

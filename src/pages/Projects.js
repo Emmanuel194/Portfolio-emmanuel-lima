@@ -1,11 +1,12 @@
 import React from "react";
+import projeto1 from "../assets/images/projeto1.jpeg";
 
 function Projects() {
   const projects = [
     {
       title: "Projeto 1",
       description: "Breve descrição do projeto 1.",
-      image: "/path-to-image1.jpg",
+      image: projeto1,
       link: "https://github.com/emmanuellima/projeto1",
     },
     {

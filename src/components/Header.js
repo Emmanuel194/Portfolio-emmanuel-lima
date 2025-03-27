@@ -39,19 +39,33 @@ function Header() {
           }}
         >
           <li>
-            <a href="#home" style={{ color: "#fff", textDecoration: "none" }}>
+            <a
+              href="#home"
+              style={{
+                color: "#fff",
+                textDecoration: "none",
+                transition: "color 0.3s ease",
+              }}
+              onMouseEnter={(e) =>
+                (e.target.style.color = "rgba(77, 184, 255, 1)")
+              }
+              onMouseLeave={(e) => (e.target.style.color = "#fff")}
+            >
               HOME
-            </a>
-          </li>
-          <li>
-            <a href="#about" style={{ color: "#fff", textDecoration: "none" }}>
-              SOBRE
             </a>
           </li>
           <li>
             <a
               href="#experience"
-              style={{ color: "#fff", textDecoration: "none" }}
+              style={{
+                color: "#fff",
+                textDecoration: "none",
+                transition: "color 0.3s ease",
+              }}
+              onMouseEnter={(e) =>
+                (e.target.style.color = "rgba(77, 184, 255, 1)")
+              }
+              onMouseLeave={(e) => (e.target.style.color = "#fff")}
             >
               EXPERIÊNCIA
             </a>
@@ -59,7 +73,15 @@ function Header() {
           <li>
             <a
               href="#technologies"
-              style={{ color: "#fff", textDecoration: "none" }}
+              style={{
+                color: "#fff",
+                textDecoration: "none",
+                transition: "color 0.3s ease",
+              }}
+              onMouseEnter={(e) =>
+                (e.target.style.color = "rgba(77, 184, 255, 1)")
+              }
+              onMouseLeave={(e) => (e.target.style.color = "#fff")}
             >
               TECNOLOGIAS
             </a>
@@ -67,7 +89,15 @@ function Header() {
           <li>
             <a
               href="#projects"
-              style={{ color: "#fff", textDecoration: "none" }}
+              style={{
+                color: "#fff",
+                textDecoration: "none",
+                transition: "color 0.3s ease",
+              }}
+              onMouseEnter={(e) =>
+                (e.target.style.color = "rgba(77, 184, 255, 1)")
+              }
+              onMouseLeave={(e) => (e.target.style.color = "#fff")}
             >
               PROJETOS
             </a>
@@ -75,7 +105,15 @@ function Header() {
           <li>
             <a
               href="#contact"
-              style={{ color: "#fff", textDecoration: "none" }}
+              style={{
+                color: "#fff",
+                textDecoration: "none",
+                transition: "color 0.3s ease",
+              }}
+              onMouseEnter={(e) =>
+                (e.target.style.color = "rgba(77, 184, 255, 1)")
+              }
+              onMouseLeave={(e) => (e.target.style.color = "#fff")}
             >
               CONTATO
             </a>
