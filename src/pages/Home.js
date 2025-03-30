@@ -10,7 +10,7 @@ import {
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
-import perfil from "../assets/images/perfil.jpg";
+import perfil from "../assets/images/perfil.jpeg";
 
 function Home() {
   return (
@@ -38,7 +38,7 @@ function Home() {
             width: "250px",
             height: "250px",
             borderRadius: "50%",
-            border: "3px solid #fff",
+            border: "3px solid #4DB8FF",
           }}
         />
 
