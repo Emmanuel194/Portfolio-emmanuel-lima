@@ -43,68 +43,7 @@ function Footer() {
             textAlign: "center",
             margin: "0",
           }}
-        >
-          <h4
-            style={{
-              marginTop: "0.5rem",
-              marginBottom: "0.5rem",
-              color: "#fff",
-            }}
-          >
-            Links Rápidos
-          </h4>
-          <ul
-            style={{
-              listStyle: "none",
-              padding: 0,
-              margin: 0,
-              display: "flex",
-              flexDirection: "column",
-              gap: "0.3rem",
-            }}
-          >
-            <li>
-              <a
-                href="#home"
-                style={{ color: "#aaa", textDecoration: "none" }}
-                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
-                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#experience"
-                style={{ color: "#aaa", textDecoration: "none" }}
-                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
-                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
-              >
-                Experiências
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                style={{ color: "#aaa", textDecoration: "none" }}
-                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
-                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
-              >
-                Projetos
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                style={{ color: "#aaa", textDecoration: "none" }}
-                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
-                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
-              >
-                Contato
-              </a>
-            </li>
-          </ul>
-        </div>
+        ></div>
 
         <div
           style={{
@@ -113,7 +52,6 @@ function Footer() {
             margin: "0",
           }}
         >
-          <h4 style={{ color: "#fff", marginBottom: "0.5rem" }}>Social</h4>
           <ul
             style={{
               listStyle: "none",
@@ -124,30 +62,7 @@ function Footer() {
               gap: "0.3rem",
             }}
           >
-            <li>
-              <a
-                href="https://www.linkedin.com/in/emmanuellimaa/"
-                target="_blank"
-                style={{ color: "#aaa", textDecoration: "none" }}
-                rel="noreferrer"
-                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
-                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/Emmanuel194"
-                target="_blank"
-                style={{ color: "#aaa", textDecoration: "none" }}
-                rel="noreferrer"
-                onMouseEnter={(e) => (e.target.style.color = linkHoverColor)}
-                onMouseLeave={(e) => (e.target.style.color = "#aaa")}
-              >
-                GitHub
-              </a>
-            </li>
+            <li></li>
           </ul>
         </div>
       </div>

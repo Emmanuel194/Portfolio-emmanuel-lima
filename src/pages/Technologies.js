@@ -1,8 +1,9 @@
 import React from "react";
+import "../styles/technologies.css"; // Importa o CSS para responsividade
 
 function Technologies() {
   return (
-    <div style={{ padding: "2rem" }}>
+    <div style={{ padding: "2rem" }} className="technologies-section">
       <h2 style={{ color: "rgba(77, 184, 255, 1)", fontWeight: "bold" }}>
         TECNOLOGIAS
       </h2>
@@ -10,7 +11,7 @@ function Technologies() {
         Tecnologias nas quais atuo.
       </p>
 
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div className="technologies-container">
         <div
           className="technology-card"
           style={{

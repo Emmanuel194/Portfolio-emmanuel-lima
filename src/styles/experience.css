@@ -1,0 +1,59 @@
+/* Contêiner Principal */
+.experience-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+}
+
+.formation-card,
+.experience-card {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: rgba(51, 51, 51, 0.8);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.formation-card h4,
+.experience-card h4 {
+  color: rgb(242, 245, 248);
+  font-weight: bold;
+}
+
+.formation-card p,
+.experience-card p {
+  color: rgba(242, 245, 248, 0.8);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .experience-container {
+    flex-direction: column; /* Alinha as divs verticalmente */
+    gap: 1.5rem; /* Espaço entre as divs */
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%; /* Cada coluna ocupa 100% da largura da tela */
+  }
+
+  .formation-card,
+  .experience-card {
+    padding: 1rem; /* Aumenta o espaço interno */
+    text-align: left; /* Mantém alinhamento dos textos à esquerda */
+  }
+
+  .technologies-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha para os ícones */
+    justify-content: center; /* Centraliza os ícones em telas menores */
+    gap: 1rem; /* Espaço entre os ícones */
+  }
+}

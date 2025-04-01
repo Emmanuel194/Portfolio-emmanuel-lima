@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { faCodeBranch, faCode } from "@fortawesome/free-solid-svg-icons";
+import "../styles/experience.css";
 
 function Experience() {
   const [showMore, setShowMore] = useState(false);

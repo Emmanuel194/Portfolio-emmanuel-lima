@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faRocketchat } from "@fortawesome/free-brands-svg-icons";
 
 function Contact() {
   return (
@@ -29,10 +28,11 @@ function Contact() {
       <div
         style={{
           display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-start",
-          gap: "2rem",
+          justifyContent: "center",
           flexWrap: "wrap",
+          maxWidth: "800px",
+          margin: "0 auto",
+          gap: "4rem",
         }}
       >
         <div
@@ -40,6 +40,7 @@ function Contact() {
             display: "flex",
             alignItems: "center",
             flex: "1",
+            maxWidth: "250px",
           }}
         >
           <FontAwesomeIcon
@@ -57,11 +58,17 @@ function Contact() {
                 color: "rgba(242, 245, 248, 1)",
                 fontWeight: "bold",
                 marginBottom: "0.5rem",
+                margin: "0",
               }}
             >
-              EMAIL:
+              EMAIL
             </p>
-            <p style={{ color: "rgba(242, 245, 248, 0.8)" }}>
+            <p
+              style={{
+                color: "rgba(242, 245, 248, 0.8)",
+                margin: "0",
+              }}
+            >
               emanuel_lima2011@hotmail.com
             </p>
           </div>
@@ -72,6 +79,7 @@ function Contact() {
             display: "flex",
             alignItems: "center",
             flex: "1",
+            maxWidth: "250px",
           }}
         >
           <FontAwesomeIcon
@@ -89,11 +97,19 @@ function Contact() {
                 color: "rgba(242, 245, 248, 1)",
                 fontWeight: "bold",
                 marginBottom: "0.5rem",
+                margin: "0",
               }}
             >
-              CONTATO:
+              CONTATO
             </p>
-            <p style={{ color: "rgba(242, 245, 248, 0.8)" }}>(81) 97340-8668</p>
+            <p
+              style={{
+                color: "rgba(242, 245, 248, 0.8)",
+                margin: "0",
+              }}
+            >
+              (81) 97340-8668
+            </p>
           </div>
         </div>
 
@@ -102,17 +118,10 @@ function Contact() {
             display: "flex",
             alignItems: "center",
             flex: "1",
+            maxWidth: "250px",
+            flexDirection: "column",
           }}
         >
-          <FontAwesomeIcon
-            icon={faRocketchat}
-            style={{
-              width: "30px",
-              height: "30px",
-              marginRight: "1rem",
-              color: "rgba(77, 184, 255, 1)",
-            }}
-          />
           <div>
             <p
               style={{
@@ -121,9 +130,15 @@ function Contact() {
                 marginBottom: "0.5rem",
               }}
             >
-              SOCIAL:
+              SOCIAL
             </p>
-            <div style={{ display: "flex", gap: "1.5rem" }}>
+            <div
+              style={{
+                display: "flex",
+                gap: "0.5rem",
+                justifyContent: "center",
+              }}
+            >
               <a
                 href="https://www.linkedin.com/in/emmanuellimaa/"
                 target="_blank"
