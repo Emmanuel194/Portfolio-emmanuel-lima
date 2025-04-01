@@ -144,9 +144,7 @@ function Projects() {
                   color: "rgba(77, 184, 255, 1)",
                   fontWeight: "bold",
                 }}
-              >
-                Ver no GitHub
-              </span>
+              ></span>
             </a>
           </div>
         ))}
