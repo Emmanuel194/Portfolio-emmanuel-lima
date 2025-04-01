@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -15,17 +15,25 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { faCodeBranch, faCode } from "@fortawesome/free-solid-svg-icons";
-import "../styles/experience.css";
 
 function Experience() {
   const [showMore, setShowMore] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const experiences = [
     {
       company: "Cesar School",
       position: "Tutor de Tecnologia",
       description:
-        "Instrução e orientação de alunos do ensino médio no desenvolvimento de habilidades em linguagens de programação, incluindo Python, JavaScript, HTML e CSS.  Aplicação de abordagens pedagógicas inovadoras, como peer instruction, para promover colaboração entre os alunos. Condução de projetos práticos de curta duração que consolidam o aprendizado por meio de aplicações reais.",
+        "Instrução e orientação de alunos do ensino médio no desenvolvimento de habilidades em linguagens de programação, incluindo Python, JavaScript, HTML e CSS. Aplicação de abordagens pedagógicas inovadoras, como peer instruction, para promover colaboração entre os alunos. Condução de projetos práticos de curta duração que consolidam o aprendizado por meio de aplicações reais.",
       technologies: [faHtml5, faCss3Alt, faJsSquare, faPython],
     },
     {
@@ -46,7 +54,7 @@ function Experience() {
       company: "VibeCem",
       position: "Desenvolvedor Full-Stack",
       description:
-        "Desenvolvimento e refatoração de interfaces utilizando Angular, com foco na melhoria da experiência do usuário. Integração do WhatsApp ao sistema web, otimizando os canais de comunicação e atendimento. Implementação de soluções no back-end com Node.js, atendendo a requisitos avançados de arquitetura e fluxo de dados. Execução de migrações no banco de dados PostgreSQL, utilizando seeders para enriquecimento de dados e automação de processos. Configuração e gerenciamento de containers Docker para aprimorar os processos de implantação e manutenção do sistema..",
+        "Desenvolvimento e refatoração de interfaces utilizando Angular, com foco na melhoria da experiência do usuário. Integração do WhatsApp ao sistema web, otimizando os canais de comunicação e atendimento. Implementação de soluções no back-end com Node.js, atendendo a requisitos avançados de arquitetura e fluxo de dados. Execução de migrações no banco de dados PostgreSQL, utilizando seeders para enriquecimento de dados e automação de processos. Configuração e gerenciamento de containers Docker para aprimorar os processos de implantação e manutenção do sistema.",
       technologies: [
         faReact,
         faNodeJs,
@@ -72,16 +80,22 @@ function Experience() {
     <div
       style={{
         display: "flex",
+        flexDirection: isSmallScreen ? "column" : "row",
         justifyContent: "space-between",
         padding: "2rem",
       }}
     >
-      <div style={{ flex: 1, marginRight: "1rem" }}>
+      <div
+        style={{
+          flex: 1,
+          marginBottom: isSmallScreen ? "1rem" : "0",
+          marginRight: isSmallScreen ? "0" : "1rem",
+        }}
+      >
         <h2 style={{ color: "rgba(77, 184, 255, 1)", fontWeight: "bold" }}>
           Competências
         </h2>
         <h3>+ Formação</h3>
-
         <div
           style={{
             padding: "1rem",
@@ -198,11 +212,15 @@ function Experience() {
         </div>
       </div>
 
-      <div style={{ flex: 1, marginLeft: "1rem" }}>
+      <div
+        style={{
+          flex: 1,
+          marginLeft: isSmallScreen ? "0" : "1rem",
+        }}
+      >
         <h2 style={{ color: "rgba(77, 184, 255, 1)", fontWeight: "bold" }}>
           + Experiências
         </h2>
-
         {visibleExperiences.map((exp, index) => (
           <div
             key={index}
@@ -223,11 +241,9 @@ function Experience() {
               <p style={{ color: "rgba(242, 245, 248, 0.8)" }}>
                 Cargo: {exp.position}
               </p>
-
               <p style={{ color: "rgba(242, 245, 248, 0.8)" }}>
                 {exp.description}
               </p>
-
               <div
                 style={{
                   display: "flex",
@@ -247,7 +263,6 @@ function Experience() {
             </div>
           </div>
         ))}
-
         <button
           onClick={() => setShowMore(!showMore)}
           style={{

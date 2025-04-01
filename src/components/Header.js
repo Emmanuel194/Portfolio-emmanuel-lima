@@ -4,6 +4,14 @@ import "../styles/header.css";
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleMenuClick = (id) => {
+    const section = document.querySelector(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    setMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="header-left">
@@ -14,19 +22,35 @@ function Header() {
       <nav className={`header-nav ${menuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="#home">HOME</a>
+            <a href="#home" onClick={() => handleMenuClick("#home")}>
+              HOME
+            </a>
           </li>
           <li>
-            <a href="#experience">EXPERIÊNCIA</a>
+            <a
+              href="#experience"
+              onClick={() => handleMenuClick("#experience")}
+            >
+              EXPERIÊNCIA
+            </a>
           </li>
           <li>
-            <a href="#technologies">TECNOLOGIAS</a>
+            <a
+              href="#technologies"
+              onClick={() => handleMenuClick("#technologies")}
+            >
+              TECNOLOGIAS
+            </a>
           </li>
           <li>
-            <a href="#projects">PROJETOS</a>
+            <a href="#projects" onClick={() => handleMenuClick("#projects")}>
+              PROJETOS
+            </a>
           </li>
           <li>
-            <a href="#contact">CONTATO</a>
+            <a href="#contact" onClick={() => handleMenuClick("#contact")}>
+              CONTATO
+            </a>
           </li>
         </ul>
       </nav>
